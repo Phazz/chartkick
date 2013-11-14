@@ -136,6 +136,12 @@
 
   if ("Highcharts" in window) {
 
+    Highcharts.setOptions({
+      global: {
+        useUTC: false
+      }
+    });
+    
     var defaultOptions = {
       chart: {},
       xAxis: {
