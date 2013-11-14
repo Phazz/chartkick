@@ -42,7 +42,7 @@ HTML
 $(function () {
     Highcharts.setOptions({
         global: {
-            useUTC: false
+            timezoneOffset: #{Time.zone.utc_offset / 60}
         }
     });
 });
