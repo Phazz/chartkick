@@ -39,11 +39,6 @@ module Chartkick
 HTML
      js = <<JS
 <script type="text/javascript">
-    Highcharts.setOptions({
-        global: {
-            timezoneOffset: #{Time.zone.utc_offset / 60}
-        }
-    });
   new Chartkick.#{klass}(#{element_id.to_json}, #{data_source.to_json}, #{options.to_json});
 </script>
 JS

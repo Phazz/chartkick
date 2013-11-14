@@ -275,6 +275,12 @@
       }
       options.series = newSeries;
 
+      Highcharts.setOptions({
+          global: {
+              timezoneOffset: #{Time.zone.utc_offset / 60}
+          }
+      });
+
       new Highcharts.Chart(options);
     };
 
