@@ -135,12 +135,6 @@
   var renderLineChart, renderPieChart, renderColumnChart, renderBarChart, renderAreaChart;
 
   if ("Highcharts" in window) {
-
-    Highcharts.setOptions({
-      global: {
-        useUTC: false
-      }
-    });
     
     var defaultOptions = {
       chart: {},
