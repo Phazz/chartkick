@@ -39,6 +39,7 @@ module Chartkick
 HTML
      js = <<JS
 <script type="text/javascript">
+  $(function () {
     Highcharts.setOptions({
         global: {
             timezoneOffset: #{Time.zone.utc_offset / 3600}
